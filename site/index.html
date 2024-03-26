@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/site/styles/global.css" />
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar show-menu">
     <div class="header-inner-content">
         <h1 class="logo">Gesso<span>Casa Nova</span></h1>
         <nav>
@@ -34,7 +34,7 @@
                     <h2>De um novo estilo ao seu ap!</h2>
                     <p>Transforme sua casa em um verdadeiro lar com o toque artístico do gesso. Crie ambientes acolhedores e sofisticados que refletem sua personalidade e estilo. Conte conosco para moldar seus sonhos em realidade.
                     </p>
-                    <button>Ver agora &#8494;</button>
+                    <button>Ver agora &#8594;</button>
                 </div>
                 <div class="header-botton-side-right">
                     <img src="imagens/placa-3d.png"/>
@@ -42,5 +42,13 @@
             </div>
         </div>
     </header>
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const menuButton = document.querySelector("menu-button");
+
+        menuButton.addEventListener("click",() =>{
+            navbar.classList.toggle("show-menu");
+        });
+    </script>
 </body>
 </html>
